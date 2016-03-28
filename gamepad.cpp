@@ -171,6 +171,7 @@ void enterPadMode()
 {
 	arduboy.clear();
 	arduboy.display();
+	arduboy.setRGBled(0, 1, 0);
 	while(true) {
 		updateNewInput();
 		
