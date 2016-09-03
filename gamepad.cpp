@@ -215,7 +215,7 @@ void releaseKey(char key)
 
 void loadKeys(byte file, byte set)
 {
-	int address = file * 10 * 5 + set*10;
+	int address = file * 10 * 5 + set*6;
 	
 	up_map_key = EEPROM.read(address);
 	down_map_key = EEPROM.read(address+1);
